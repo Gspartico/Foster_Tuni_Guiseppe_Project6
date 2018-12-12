@@ -1,10 +1,8 @@
 .BuildTripForm {
-    // backdrop-filter: blur(2px) grayscale(100%);
     position: relative;
 
     & .formWrapper {
         height: 70vh;
-        // padding: 5vh 0;
         float: left;
         width: 45%;
     }
@@ -184,8 +182,6 @@
         margin-top: 19vh; 
     }
 }
-
-//FIX THE RADIO INPUTS
 
 .createdTripDetails {
     width: 45%;
