@@ -24,6 +24,7 @@ class App extends Component {
       <div className="App">
         <MainNav />
         <Route path='/' component={BuildTripForm} />
+        {/* <Route path="/details" component={TripDetails} /> */}
       </div>
       </Router>
     );
