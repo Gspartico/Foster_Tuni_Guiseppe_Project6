@@ -390,9 +390,9 @@ class BuildTripForm extends Component {
                 {nextPage && this.state.showForm
                     ? (<div className="wrapper clearfix">
                         {startForm && this.state.showForm
-                            ? <div className="formWrapper"><form className="tripForm tripForm--country" action="submit" autoComplete="off">
+                            ? <div className="formWrapper"><form className="tripForm tripForm--country" action="submit" autocomplete="off">
                                 <label htmlFor="selectedCountry">Choose a starting city for your trip:</label>
-                                <input type="text/javascript" name="selectedCountry" id="selectedCountry" placeholder="Enter city" onChange={this.handleChange} spellCheck="true" className="tripForm__middleInput" required />
+                                <input type="text/javascript" name="selectedCountry" id="selectedCountry" placeholder="Enter city" onChange={this.handleChange} spellcheck="true" className="tripForm__middleInput" required />
                                 <input type="submit" value="Continue" onClick={this.selectInput} />
                             </form>
                             </div>
