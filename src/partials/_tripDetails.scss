@@ -16,7 +16,8 @@
 }
 
 .board {
-    width: calc((100% - 60px) / 3);
+    // width: calc((100% - 60px) / 3);
+    width: 30%;
     float: left;
     margin-right: 30px;
     padding: 30px;
