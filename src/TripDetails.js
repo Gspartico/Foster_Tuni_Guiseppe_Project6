@@ -60,14 +60,12 @@ class TripDetails extends Component {
             ]
         })
     }
-
     //handle change
     handleChange = event => {
         this.setState({
             [event.target.id]: event.target.value
         });
     };
-
     //add city
     //adding a city to our cities array
     addCity = event => {
@@ -94,7 +92,6 @@ class TripDetails extends Component {
             typeSuggestion: ""
         })
     }
-
     //add vote
     //adding votes until it reaches the majority of votes
     addVote = (event) => {
@@ -110,7 +107,6 @@ class TripDetails extends Component {
         this.setState({
             cities: addingVote
         })
-
         //creating a variable to determine majority of votes
         const stopVotes = Math.floor(this.state.groupMembers.length / 2 + 1);
 
@@ -130,7 +126,6 @@ class TripDetails extends Component {
             })
         }
     }
-
     //subtract vote
     //subtract votes until it reaches the majority of votes
     subtractVote = (event) => {
@@ -152,7 +147,6 @@ class TripDetails extends Component {
             })
         }
     }
-
     addHotel = event => {
         event.preventDefault();
 
@@ -179,7 +173,6 @@ class TripDetails extends Component {
             hotelType: ""
         })
     }
-
     addVoteHotel = (event) => {
         //conditions on what's rendering before a city reaches majority of votes and after is already set on render       
 
@@ -194,7 +187,6 @@ class TripDetails extends Component {
             hotel: addingVote
         })
     }
-
     subtractVoteHotel = (event) => {
 
         //creating a variable for how many votes it has
@@ -240,7 +232,6 @@ class TripDetails extends Component {
             foodType: ""
         })
     }
-
     addVoteFood = (event) => {
         //conditions on what's rendering before a city reaches majority of votes and after is already set on render       
 
@@ -255,7 +246,6 @@ class TripDetails extends Component {
             food: addingVote
         })
     }
-
     subtractVoteFood = (event) => {
 
         //creating a variable for how many votes it has
@@ -470,9 +460,8 @@ class TripDetails extends Component {
                     {/* displaying the country and the type of trip that the user chose */}
                     <h2 className="header__heading header__heading--h2">You're going to {this.props.country}!</h2>
 
-                    <h4 className="header__heading header__heading--h4">From {this.props.startDate} - {this.props.endDate}</h4>
-
-                    <h4 className="header__heading header__heading--h4">To experience {this.props.type}</h4>
+                    <h4 className="header__heading header__heading--h4">From {this.props.startDate}</h4>
+                    <h4 className="header__heading header__heading--h4">To {this.props.endDate}</h4>
                 </header>
                 <div className="boards">
                     {/* CITIES START */}
